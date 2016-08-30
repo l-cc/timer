@@ -89,7 +89,7 @@ public class StopWatchView extends LinearLayout {
                 long thisUpTime = event.getEventTime();
                 long rs = thisUpTime - lastUpTime;
                 lastUpTime = thisUpTime;
-                if (rs < 200) {
+                if (rs < 250) {
                     resetTime();
                     Log.i(TAG, "onTouchEvent:這有問題");
                     
